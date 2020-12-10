@@ -6,19 +6,23 @@ h1 {
     font-size: 5em;
     margin: 50px auto 0 auto;
     font-family: "Reenie Beanie", cursive;
-    color: #30475e;
+    color: #fdb827;
 }
 
 h2 {
     font-size: 2.5rem;
-    color: #f05454;
+    color: #21209c;
 }
 h3 {
-    color: #34626c;
+    color: #23120b;
+    font-size: 1.2rem;
+    text-decoration: underline;
 }
 p {
     font-family: "Rubik", sans-serif;
     /* font-family: "DM Serif Display", serif; */
+    font-size: 1rem;
+    padding-bottom: 5%;
 }
 a {
     color: #34626c;
@@ -30,18 +34,18 @@ a:visited {
     text-decoration: none;
 }
 a:hover {
-    /* text-decoration: underline; */
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 hr {
-    border-top: 4px dotted #30475e27;
-    width: 100px;
+    border-top: 4px dotted #23120b;
+    width: 10%;
 }
 
 .top-container {
-    background-color: #9ba4b4;
-    padding-top: 100px;
+    /* background-color: #9ba4b4; */
+    background-color: #21209c;
+    /* padding-top: 100px; */
 
     line-height: normal;
 }
@@ -61,6 +65,10 @@ hr {
     left: 300px;
 }
 
+.dog-img {
+    width: 30%;
+}
+
 .top-container h2 {
     font-size: 2rem;
     color: #e8e8e8;
@@ -69,12 +77,47 @@ hr {
     font-weight: normal;
 }
 
-.profile {
-    padding-top: 50px;
+.navbar {
+    /* padding: 0 0 3.5rem; */
+    text-align: left;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+.nav-link {
+    /* font-family: "Montserrat"; */
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.nav-link:hover {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+#profile {
+    padding-top: 7%;
     margin: 0 auto 50px auto;
     width: 50%;
 }
 
+.profile-pic {
+    padding-bottom: 5%;
+    width: 40%;
+}
+
+#skills {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #fdb827;
+}
 .interests {
     height: 150px;
     margin-right: 50px;
@@ -106,13 +149,32 @@ hr {
     padding-bottom: 20px;
 }
 
+#contact {
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
 .bottom-container {
     padding-top: 20px;
-    background-color: #f05454;
-    height: 15vh;
+    background-color: #21209c;
+    height: 20vh;
+    position: relative;
+    bottom: 0;
 }
 
 .copyright {
     font-size: 0.8rem;
     color: #e8e8e8;
+    padding-bottom: 2%;
+}
+
+.link-top {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #e8e8e8;
+    margin-bottom: 10px;
+}
+
+.link-top:hover {
+    text-decoration: none;
 }

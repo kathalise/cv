@@ -3,6 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="icon" href="favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -15,17 +21,53 @@
     </head>
     <body>
         <div class="top-container">
-            <img class="top-cloud" src="images/cloud.png" alt="cloud-img" />
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a id="kw" class="navbar-brand" href="#">kw</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <h1>I'm Katharina,</h1>
-            <h2>a full-stack developer.</h2>
-            <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img" />
-            <img src="images/mountain.png" alt="mountain-img" />
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#profile">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <img class="top-cloud" src="images/cloud.png" alt="cloud-img" /> -->
+
+            <h1>I'm Katharina</h1>
+            <h2>a web developer</h2>
+            <!-- <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img" /> -->
+            <!-- <img src="images/mountain.png" alt="mountain-img" /> -->
+            <img class="dog-img" src="images/dog.svg" alt="dog-img" />
         </div>
         <div class="middle-container">
-            <div class="profile">
-                <img src="images/katharina.png" alt="profile-pic" />
-                <h2>A little about myself.</h2>
+            <div id="profile">
+                <img
+                    class="profile-pic"
+                    src="images/kw.png"
+                    alt="katharina wolf"
+                />
+                <h2 style="padding-bottom: 3%">A little about myself</h2>
                 <p>
                     I am a JavaScript Developer with a background in
                     architecture and communications. <br />
@@ -33,18 +75,28 @@
                     bilingual upbringing manifests itself in my great passion
                     for exploring different cultures and learning new
                     (programming) languages.
+                    <br /><br />Also, I love dogs and have a thing for
+                    Dachshunds.
                 </p>
             </div>
-            <hr />
-            <div class="skills">
-                <h2>My Skills.</h2>
+
+            <!-- <div id="projects">
+                <h2>Projects</h2>
+                <p>Check out what I make</p>
+            </div> -->
+
+            <!-- <hr /> -->
+            <div id="skills">
+                <h2>My Skills</h2>
                 <div class="skill-row">
                     <img class="laptop" src="images/laptop.png" alt="laptop" />
-                    <h3>Tech Stack</h3>
+                    <h3>Tech Stack & Software</h3>
                     <p>
-                        JavaScript, ES6 <br />Front: HTML5, CSS, jQuery, Vue,
-                        React, Redux <br />End: Node, Express, PostgresSQL,
-                        Redis, AWS
+                        JavaScript, ES6 <br />HTML5, CSS, jQuery, Vue, React,
+                        Redux <br />Node, Express, PostgresSQL, Redis, AWS
+                        <br />
+                        Adobe Illustrator, InDesign, Photoshop, WordPress,
+                        MailChimp
                     </p>
                 </div>
                 <div class="skill-row">
@@ -60,18 +112,20 @@
                     />
                     <h3>Other Interests</h3>
                     <p>
-                        Besides challenging myself to learn new languages and
+                        Other than challenging myself to learn new languages and
                         expand my coding skills, I really enjoy wintersports in
-                        the mountains.
+                        the mountains. Currently I am studying Spanish and
+                        dreaming of travelling los paises hispanohablantes.
                     </p>
                 </div>
             </div>
-            <hr />
-            <div class="contact-me">
-                <h2>Get In Touch</h2>
-                <p>
+
+            <!-- <hr /> -->
+            <div id="contact">
+                <h2 style="padding-bottom: 3%">Get In Touch</h2>
+                <p style="padding-bottom: 1%">
                     I am open for collaborations and always happy to have a
-                    chat. Reach out anytime!
+                    chat. <br />Reach out anytime!
                 </p>
                 <a class="btn" href="mailto:wolfkatharina89@gmail.com"
                     >Contact me</a
@@ -88,6 +142,8 @@
             <a class="footer-link" href="https://github.com/kathalise"
                 >GitHub</a
             >
+            <!-- <a class="link-top" href="#kw">Top</a><br /> -->
+
             <!-- <a class="footer-link" href="https://www.appbrewery.co/">Website</a> -->
             <p class="copyright">© 2020 Katharina Wolf.</p>
         </div>
