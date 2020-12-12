@@ -1,10 +1,11 @@
 body {
     margin: 0;
     text-align: center;
+    background-color: #21209c;
 }
 h1 {
     font-size: 5em;
-    margin: 50px auto 0 auto;
+    margin: 10% auto 0 auto;
     font-family: "Reenie Beanie", cursive;
     color: #fdb827;
 }
@@ -46,6 +47,7 @@ hr {
     /* background-color: #9ba4b4; */
     background-color: #21209c;
     /* padding-top: 100px; */
+    height: 100vh;
 
     line-height: normal;
 }
@@ -80,6 +82,13 @@ hr {
 .navbar {
     /* padding: 0 0 3.5rem; */
     text-align: left;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.position-fixed {
+    position: fixed;
 }
 
 .navbar-brand {
@@ -98,8 +107,8 @@ hr {
 }
 
 .nav-link:hover {
-    font-size: 1.2rem;
-    font-weight: lighter;
+    text-decoration: underline;
+    font-weight: normal;
 }
 
 #profile {
@@ -113,6 +122,29 @@ hr {
     width: 40%;
 }
 
+#projects {
+    display: inline;
+    padding: 5%;
+}
+
+.project-grid {
+    display: flex;
+    padding: 3%;
+}
+
+.project {
+    margin: 2%;
+    width: 30%;
+}
+
+.project img {
+    margin-bottom: 7%;
+}
+
+.image-board {
+    width: 80%;
+    height: auto;
+}
 #skills {
     padding-top: 5%;
     padding-bottom: 5%;
