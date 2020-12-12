@@ -232,6 +232,12 @@ hr {
 }
 
 @media (max-width: 500px) {
+    .navbar {
+        text-align: center;
+        position: relative;
+        top: 0; /* Position the navbar at the top of the page */
+    }
+
     #profile {
         width: 80%;
     }
