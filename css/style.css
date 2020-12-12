@@ -39,8 +39,9 @@ a:hover {
 }
 
 hr {
-    border-top: 4px dotted #23120b;
+    border-top: 4px dotted #23120b5b;
     width: 10%;
+    margin-bottom: 5%;
 }
 
 .top-container {
@@ -69,6 +70,10 @@ hr {
 
 .dog-img {
     width: 30%;
+}
+
+.dog-img:hover {
+    transform: translate(70%, 0);
 }
 
 .top-container h2 {
@@ -139,12 +144,27 @@ hr {
 
 .project img {
     margin-bottom: 7%;
+    box-shadow: 10px 10px #fdb927;
+    margin-bottom: 10%;
 }
 
-.image-board {
-    width: 80%;
+.project p {
+    text-align: left;
+    margin-left: 5%;
+}
+
+.gif {
+    width: 90%;
     height: auto;
 }
+
+.gif:hover {
+    height: 30vh;
+    width: auto;
+    z-index: 10;
+    box-shadow: none;
+}
+
 #skills {
     padding-top: 5%;
     padding-bottom: 5%;
