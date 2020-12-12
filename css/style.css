@@ -230,3 +230,19 @@ hr {
 .link-top:hover {
     text-decoration: none;
 }
+
+@media (max-width: 500px) {
+    #profile {
+        width: 80%;
+    }
+    .project-grid {
+        display: inline;
+        padding: 3%;
+        text-align: center;
+    }
+
+    .project {
+        margin: 5%;
+        width: 80%;
+    }
+}
